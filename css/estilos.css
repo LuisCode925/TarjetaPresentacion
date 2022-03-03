@@ -1,0 +1,97 @@
+:root {
+    --colorPrimario: #1c1c1c; 
+    --colorSecundario: white;
+    --colorTerciario: #52489c;
+    --textColor: #4062bb;
+    --textColor2: #59c3c3;
+    --fuentePrimaria: 'Syne Mono', monospace;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    /* Reset para los REMs */
+    height: 100%;
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.8rem; }
+h3 { font-size: 2.5rem; }
+h4 { font-size: 2rem; }
+h5 { font-size: 1.5rem; }
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuentePrimaria);
+    font-size: 2rem !important;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
+    color: var(--accent-color);
+}
+
+.sombra{
+    -webkit-box-shadow: 9px 13px 16px -1px rgba(0,0,0,0.54);
+    -moz-box-shadow: 9px 13px 16px -1px rgba(0,0,0,0.54);
+    box-shadow: 9px 13px 16px -1px rgba(0,0,0,0.54);
+    border-radius: .5rem;
+}
+
+.neon {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    color: rgba(255,255,255,1);
+    text-decoration: normal;
+    text-align: center;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    white-space: pre;
+    text-shadow: 
+        0 0 10px rgba(255,255,255,1), 
+        0 0 20px rgba(255,255,255,1), 
+        0 0 30px rgba(255,255,255,1), 
+        0 0 40px #ff00de, 
+        0 0 70px #ff00de, 
+        0 0 80px #ff00de, 
+        0 0 100px #ff00de;
+    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  }
+  
+.neon:hover {
+    text-shadow:
+        0 0 10px rgba(255,255,255,1), 
+        0 0 20px rgba(255,255,255,1), 
+        0 0 30px rgba(255,255,255,1), 
+        0 0 40px #00ffff, 
+        0 0 70px #00ffff, 
+        0 0 80px #00ffff, 
+        0 0 100px #00ffff;
+}
+
+.accordion-header {
+    font-size: 2.4rem !important;
+}
+
+.svg-facebook{
+    color: #0583F2;
+}
+
+.site-footer {
+    margin-top: auto;
+}
+button.accordion-button {
+    color: var(--colorPrimario) !important;
+}
